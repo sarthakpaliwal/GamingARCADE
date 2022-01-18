@@ -1,0 +1,406 @@
+﻿<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
+	<title>Comodo Games</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/animate-css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/flaticon/flaticon.css' %}">
+	<!-- main css -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="{% url 'games:index' %}"><img src="{% static 'img/logo.png' %}" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="home_left_img">
+							<img class="img-fluid" src="{% static 'img/banner/home-left.png' %}" alt="">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="banner_content">
+							<div id="container7">
+  <h5>Comodo </h5>
+  <h5>Comodo </h5>
+  <h5>Comodo </h5>
+</div>
+<div id="container7">
+  <h5>Games </h5>
+  <h5>Games </h5>
+  <h5>Games </h5>
+</div>
+<p>
+								We aim at personalising the Gaming experience by using the top class machine learning algorithms.
+							</p>
+							<div class="d-flex align-items-center">
+								<a id="play-home-video" class="video-play-button" href="https://www.youtube.com/watch?v=JGaTHNql_VU">
+									<span></span>
+								</a>
+								<div class="watch_video text-uppercase">
+									Watch the video
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Home Banner Area =================-->
+
+	<!--================Start About Us Area =================-->
+	<section class="about_us_area section_gap_top">
+		<div class="container">
+			<div class="row about_content align-items-center">
+				<div class="col-lg-6">
+					<div class="section_content">
+						<h1>Rock <br>Paper <br>Scissors</h1>
+						<p>“Rock breaks scissors, scissors cuts paper, paper covers rock.” In other words, a player who chooses rock beats one who chooses scissors; scissors in turn beats paper; paper beats rock. This yields a winner whenever the two players choose differently. Press 'Q' to quit.</p>
+						<a class="primary_btn" href="{% url 'games:rock_paper_scissors' %}">Play</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about_us_image_box justify-content-center">
+						<img class="img-fluid w-100" src="{% static 'img/about_img.png' %}" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End About Us Area =================-->
+<!--================Start About Us Area =================-->
+	<section class="about_us_area section_gap_top">
+		<div class="container">
+			<div class="row about_content align-items-center">
+				<div class="col-lg-6">
+					<div class="section_content">
+						<h1>Hangman	</h1>
+						<p>The Machine thinks of a word or phrase; the others try to guess what it is, one letter at a time. The player draws a number of dashes equivalent to the number of letters in the word. If a guessing player suggests a letter that occurs in the word, the other player fills in the blanks with that letter in the right places.</p>
+						<a class="primary_btn" href="{% url 'games:hangman' %}">Play</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about_us_image_box justify-content-center">
+						<img class="img-fluid w-100" src="{% static 'img/about_img2.jpg' %}" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End About Us Area =================-->
+<!--================Start About Us Area =================-->
+	<section class="about_us_area section_gap_top">
+		<div class="container">
+			<div class="row about_content align-items-center">
+				<div class="col-lg-6">
+					<div class="section_content">
+						<h1>Stats for Gamers	</h1>
+						<p>This section does a Expolartive data analysis and draws conclusions about the previous released games. We also help the nerds and geeks by providing the Machine learning codes and the facts about how we reached to the conclusion</p>
+						<a class="primary_btn" href="{% url 'games:games_eda' %}">View</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about_us_image_box justify-content-center">
+						<img class="img-fluid w-100" src="{% static 'img/stats_gamers.png' %}" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End About Us Area =================-->
+
+
+	<!--================ Start Gallery Area =================-->
+	<section class="gallery_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title">
+						<h2>Screens Gallery</h2>
+						<h1>Screens Gallery</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="single-gallery">
+								<div class="overlay"></div>
+								<img class="img-fluid w-100" src="{% static 'img/gallery_img1.png' %}" alt="">
+								<div class="content">
+									<a class="pop-up-image" href="{% static 'img/gallery_img1.png' %}">
+										<i class="lnr lnr-eye"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="single-gallery">
+								<div class="overlay"></div>
+								<img class="img-fluid w-100" src="{% static 'img/gallery_img2.png' %}" alt="">
+								<div class="content">
+									<a class="pop-up-image" href="{% static 'img/gallery_img2.png' %}">
+										<i class="lnr lnr-eye"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="single-gallery">
+								<div class="overlay"></div>
+								<img class="img-fluid w-100" src="{% static 'img/gallery_img3.png' %}" alt="">
+								<div class="content">
+									<a class="pop-up-image" href="{% static 'img/gallery_img3.png' %}">
+										<i class="lnr lnr-eye"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 hidden-md hidden-sm">
+					<div class="single-gallery">
+						<div class="overlay"></div>
+						<img class="img-fluid w-100" src="{% static 'img/gallery_img4.png' %}" alt="">
+						<div class="content">
+							<a class="pop-up-image" href="{% static 'img/gallery_img4.png' %}">
+								<i class="lnr lnr-eye"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Gallery Area =================-->
+
+
+	<!--========== Start Testimonials Area ==================-->
+	<section class="testimonials_area section_gap">
+		<div class="container">
+			<div class="testi_slider owl-carousel">
+				<div class="testi_item">
+					<img src="{% static 'img/quote.png' %}" alt="">
+					<h4>Fanny Spencer</h4>
+					<ul class="list">
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+					</ul>
+					<div class="wow fadeIn" data-wow-duration="1s">
+						<p>
+							Loads of fun loads of games, great evening, friendly folks running the show <br>Amazing game, I always had really good time there:) Highly recommended
+						</p>
+					</div>
+				</div>
+				<div class="testi_item">
+					<img src="{% static 'img/quote.png' %}" alt="">
+					<h4>Ben Holmes</h4>
+					<ul class="list">
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+					</ul>
+					<div class="wow fadeIn" data-wow-duration="1s">
+						<p>
+							So rad, literlly, machine learning algorithms make a mix such a wicked vibe.
+							A great idea amazingly executed!<br> A really fun way to spend the evening, gaming with friends. 
+							</p>
+					</div>
+				</div>
+				<div class="testi_item">
+					<img src="{% static 'img/quote.png' %}" alt="">
+					<h4>RD Sharma</h4>
+					<ul class="list">
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+						<li><a href="#"><i class="fa fa-star"></i></a></li>
+					</ul>
+					<div class="wow fadeIn" data-wow-duration="1s">
+						<p>
+							Very enjoyable event with all the best retro games around that I have enjoyed a lot.
+						<br>  A gamer's heaven.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Testimonials Area ================-->
+
+
+	
+
+	<!--================ Start Frequently Asked Questions Area ================-->
+	<section class="frequently_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title">
+						<h2>Frequently Asked Questions</h2>
+						<h1>Frequently Asked Questions</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row frequent_inner">
+				<div class="col-lg-5 col-md-5">
+					<div class="frequent_item">
+						<h3>Do I need to enter my credit card details?</h3>
+						<p>Comodo games requires no personal login credentials and it's a free gaming website for everyone. We don't want your information, Goverment has it all already, and we aim to steal it. Hushhh...Don't tell anyone :)  </p>
+					</div>
+				</div>
+				<div class="offset-lg-2 col-lg-5 offset-md-2 col-md-5">
+					<div class="frequent_item">
+						<h3>Why use Machine Learning in Gaming?</h3>
+						<p>Machine learning  focuses on using algorithms and statistical models to make machines act without specific programming. Our Gaming algorithm learns from you, uses your Brains to learn...I pity the algorithm.</p>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-5">
+					<div class="frequent_item">
+						<h3>Does My Data Get saved?</h3>
+						<p>The moment you leave the webpage, the data gets deleted. We dont want your hand gestures with us. Thank You.</p>
+						<br><br><br><br>
+					</div>
+				</div>
+				<div class="offset-lg-2 col-lg-5 offset-md-2 col-md-5">
+					<div class="frequent_item">
+						<h3>Will this website Give rise to evil AI?</h3>
+						<p>When we look at the rise of artificial intelligence, it’s easy to get carried away with dystopian visions of sentient machines that rebel against their human creators. Fictional baddies such as the Terminator’s Skynet or Hal from A Space Odyssey show these ideas. To answer your questions, yes, we are working on evil AI. Also, Don't Trust the Goverment</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Frequently Asked Questions Area ================-->
+
+	
+	<!--================Footer Area =================-->
+	<footer class="footer_area section_gap_top">
+		<div class="container">
+			<div class="row footer_inner">
+				<div class="col-lg-3 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+							<h4>Made with love by</h4>
+							<br>
+							<br>
+						<h4><a href="https://www.linkedin.com/in/pooja-khandekar-a976a718b/"></a>Pooja Khandekar</a></h4>
+						</div>
+					</aside>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+						</div>
+						<ul>
+							<li><a href="#"></a> &nbsp&nbsp&nbsp </a></li><a href="#">
+								<li><a href="#"></a>&nbsp&nbsp&nbsp
+							</a></li>
+							<li><a href="#"></a>&nbsp&nbsp&nbsp</a></li>
+							<li><a href="#"></a>&nbsp&nbsp&nbsp</a></li>
+							<li><a href="#"></a>&nbsp&nbsp&nbsp</a></li>
+						</ul>
+					</aside>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+							<h4>&nbsp&nbsp&nbsp</h4>
+						</div>
+						<ul>
+							<li><a href="#"></a>&nbsp&nbsp&nbsp</a></li><a href="#">
+								<li><a href="#"></a>&nbsp&nbsp&nbsp
+							</a></li>
+							<li><a href="#"></a>&nbsp&nbsp&nbsp</a></li>
+							<li><a href="#"></a>&nbsp&nbsp&nbsp</a></li>
+							<li><a href="#"></a>&nbsp&nbsp&nbsp</a></li>
+						</ul>
+					</aside>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+							<h4>About me</h4>
+						</div>
+						<ul>
+							<li></a>I am a student from SVVV, Indore.</a></li><a href="#">
+							<li><a href="#"></a>The Website was made in association with AllSoft Solutions and Services Pvt. Ltd.
+							</a></li>
+							<li><a href="#"></a>I would like to present my sincere gratitude for providing me with this oppourtunity</a></li>
+							<li><a href="#"></a>This website is dedicated to all the Covid-19 warriors</a></li>
+						</ul>
+														
+					<ul>
+					
+					<div class="social_widget">
+					</aside>
+				</div>
+			</div>
+			
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'js/popper.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/stellar.js' %}"></script>
+	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+	<script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+	<script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
+	<script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+	<script src="{% static 'vendors/counter-up/jquery.waypoints.min.js' %}"></script>
+	<script src="{% static 'vendors/counter-up/jquery.counterup.min.js' %}"></script>
+	<script src="{% static 'js/mail-script.js' %}"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="{% static 'js/gmaps.min.js' %}"></script>
+	<script src="{% static 'js/theme.js' %}"></script>
+</body>
+
+</html>
